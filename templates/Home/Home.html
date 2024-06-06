@@ -12,14 +12,15 @@
     <div class="title">多来点餐</div>
     <div class="login-box">
         <h1>登录</h1>
-        <form>
+        <form method="POST" action="{% url 'index' %}">
+            {% csrf_token %}
             <label for="username">用户名：</label>
             <input type="text" id="username" name="username">
             <br>
             <label for="password">密码：</label>
             <input type="password" id="password" name="password">
             <br>
-            <button type="submit">登录</button>
+            <button type="submit">登录</button>{{ error_msg}}
         </form>
         <p>还没有账号？<a href="{% url 'register'%}">立即注册</a></p>
         <p>切换到<a href="{% url 'Home_sheller'%}">商家版</a></p>

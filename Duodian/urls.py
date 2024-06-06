@@ -15,8 +15,8 @@ Including another URLconf
 """
 # from django.contrib import admin
 # 使用主路由加分路由的方式，让代码规范化
-from django.urls import path,include
+from django.urls import path, include
 
 urlpatterns = [
-    path('',include('Home.urls'))
+    path('', include('Home.urls')),
 ]

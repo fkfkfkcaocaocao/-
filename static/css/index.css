@@ -28,7 +28,7 @@
 .city{
     width: 65px;
     height: 50px;
-    background-color: #F2BD47;
+    background-color: #017E5C;
     font-size: 14px;
 }
 .search{
@@ -45,35 +45,46 @@
     color: #fff;
     font-size: 12px;
 }
-.search>i{
+.form-control{
     font-size: 20px;
 }
+
+	.box{
+		width:500px;
+		height:40px;
+		border:2px solid #017E5C;
+		margin:auto;
+	}
+		.input{
+		float:left;
+		width:400px;/*宽400*/
+		height:38px;/*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+		outline:none;
+		border:none;/*取消文本框内外边框*/
+	}
+	.button{
+	float:left;
+	width:96px;
+	height:38px;
+	color:black;
+	background-color:#ecf3fc;/*将按钮背景设置为红色，字体设置为白*/
+
+	/*取消边框和外边框将按钮边框去掉*/
+}
+
 /*导航样式结束*/
 /*banner样式开始*/
-.banner{
-    position: relative;
-}
-.banner>img{
-    width: 100%;
-}
-.btn{
-    display: flex;
-    /*设置在子元素之间平均分配父元素剩余的空间*/
-    justify-content: space-between;
-    position: absolute;
-    bottom: 5%;
-    /*走父元素的百分之50*/
-    left: 50%;
-    /*走的是自己的百分之50*/
-    transform: translateX(-50%);
-    width: 60%;
-    height: 5%;
-}
-.btn>li{
-    height: 100%;
-    width: 18%;
-    background-color: #017E5C;
-}
+
+#myCarousel {
+				height: 600px;
+			}
+
+#myCarousel .carousel-inner>.item>img {
+			display: block;
+			width: 100%;
+			height: 600px;
+		}
+
 /*banner样式结束*/
 /*消息样式开始*/
 .message{

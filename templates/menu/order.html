@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>订单状态：{{ order.status }}</h2>
+{% if order.status == '已完成' %}
+  <button onclick="markAsCompleted()">标记为已完成</button>
+{% endif %}
 </body>
 </html>
